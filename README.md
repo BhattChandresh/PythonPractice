@@ -1,2 +1,2 @@
 # PythonPractice
-Demos of Python Practical Example
+Python Learning with Example.
