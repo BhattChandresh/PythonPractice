@@ -31,6 +31,8 @@ Theory:
 5. Assignment Operators.
 
 6. Special Operators.
+   - Identity operator (is, is not)
+   - Membership operator (in, not in)
 
 
 '''
@@ -148,3 +150,39 @@ print(10 or 10/0) # 10
 print(not 10) # False
 print(not '') # True
 print(not 0) # True
+
+# Ternary Operator in Python
+x= 30 if(10 <20) else 40
+print(x) # 30
+x=True if(100 > 90) else False
+print(x) # True
+x=True if(10 > 90) else False
+print(x) # False
+
+print("--- Identity Operators Demo ---")
+# Basically it is used for if both the objects are same then it returns True else false.
+# is operator always check address (reference) comparison while == check the equality object.
+a = 10
+b = 10
+print(a is b) # True
+print(a is not b) # False
+a = 10
+b = 20
+print(a is b) # False
+print(a is not b) # True
+
+# Because list are mutable two different objects are created.
+l1 = [10,20,30]
+l2 = [10,20,30]
+print(id(l1)) # 140265894332360
+print(id(l2)) # 140265894330760
+print(l1 is l2) # False
+print(l1 == l2) # True
+
+
+print("--- Membership Operators Demo ---")
+l1 = (10,20,30)
+print(10 in l1) # True
+print(40 in l1) # False
+print(20 not in l1) # False
+print(90 not in l1) # True
