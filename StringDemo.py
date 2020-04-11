@@ -119,4 +119,38 @@ print(s.title()) #Learning Python Is Very Easy
 print(s.capitalize()) #Learning python is very easy
 
 s = 'AaBbCcdDeE'
-print(s.swapcase()) #aAbBcCDdEe
+print("swapcase :",s.swapcase()) #aAbBcCDdEe
+
+
+#startswith(substring)
+#endswith(substring)
+s = 'Learning Python is quite essential'
+print("Starts with : ", s.startswith('Learning'))
+print("Ends with :",s.endswith('essential'))
+
+#isalnum() ==>  if string contains only alpha numeric characters it returns true
+#isalpha() ==> if string contains only alphabets it returns true
+#isdigit() ==> if string contains only digits it returns true
+#islower() ==> retruns true if all the characters are lowercase
+#isupper() ==> retruns true if all the characters are uppercase
+#istitle ==> retruns true if string is is title case
+#isspace()
+
+print('isalnum:', 'Chandresh7989'.isalnum()) #True
+print('isalpha:', 'Chandresh7989'.isalpha()) #False
+print('isalpha:', 'Chandresh'.isalpha()) #True
+print('isdigit:', 'Chandresh7989'.isdigit()) #False
+print('isdigit:', '794589'.isdigit()) #True
+print('islower:', 'abc'.islower()) #True
+print('islower:', 'Abc'.islower()) #False
+print('islower:', 'abc123'.islower()) #True
+print('isupper:', 'ABC'.isupper()) #True
+print('isupper:', 'Abc'.isupper()) #False
+print('isupper:', 'ABC123'.isupper()) #True
+print('istitle :', 'Learning python is easy'.istitle()) #False
+print('istitle :', 'Learning Python Is Easy'.istitle()) #True
+print('isspace :','  '.isspace()) #True
+print('isspace :','A B C  '.isspace()) #True
+
+
+
